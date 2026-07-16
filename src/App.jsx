@@ -197,14 +197,7 @@ const Portfolio = () => {
                   <span className="skill-tag">Offline-first</span>
                 </div>
               </div>
-              <div className="project-image" aria-hidden="true">
-                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <rect x="1" y="3" width="15" height="13"></rect>
-                  <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
-                  <circle cx="5.5" cy="18.5" r="2.5"></circle>
-                  <circle cx="18.5" cy="18.5" r="2.5"></circle>
-                </svg>
-              </div>
+              <div className="project-image" aria-hidden="true">Logistics UI</div>
             </div>
 
             <div className="project-card">
@@ -217,12 +210,7 @@ const Portfolio = () => {
                   <span className="skill-tag">Fintech</span>
                 </div>
               </div>
-              <div className="project-image" aria-hidden="true">
-                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <rect x="2" y="5" width="20" height="14" rx="2"></rect>
-                  <line x1="2" y1="10" x2="22" y2="10"></line>
-                </svg>
-              </div>
+              <div className="project-image" aria-hidden="true">Wallet UI</div>
             </div>
 
             <div className="project-card">
@@ -235,20 +223,7 @@ const Portfolio = () => {
                   <span className="skill-tag">Hardware Control</span>
                 </div>
               </div>
-              <div className="project-image" aria-hidden="true">
-                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
-                  <rect x="9" y="9" width="6" height="6"></rect>
-                  <line x1="9" y1="1" x2="9" y2="4"></line>
-                  <line x1="15" y1="1" x2="15" y2="4"></line>
-                  <line x1="9" y1="20" x2="9" y2="23"></line>
-                  <line x1="15" y1="20" x2="15" y2="23"></line>
-                  <line x1="20" y1="9" x2="23" y2="9"></line>
-                  <line x1="20" y1="14" x2="23" y2="14"></line>
-                  <line x1="1" y1="9" x2="4" y2="9"></line>
-                  <line x1="1" y1="14" x2="4" y2="14"></line>
-                </svg>
-              </div>
+              <div className="project-image" aria-hidden="true">Hardware UI</div>
             </div>
 
           </div>
