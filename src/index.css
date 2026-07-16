@@ -1,16 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
 
 :root {
-  --bg-base: #000000;
-  --surface: #0A0A0C;
-  --surface-hover: #121216;
-  --accent: #4F46E5; /* Electric Indigo */
-  --accent-hover: #4338CA;
-  --text-primary: #F3F4F6;
-  --text-secondary: #9CA3AF;
-  --border: #1F2937;
-  --border-hover: #374151;
-  --font-sans: 'Inter', -apple-system, sans-serif;
+  /* Core Backgrounds */
+  --bg-base: #0A0E1A; /* Deep Navy Background */
+  --surface: rgba(17, 24, 39, 0.7); /* Translucent navy for cards */
+  --surface-hover: rgba(31, 41, 55, 0.8);
+
+  /* Accents */
+  --accent: #3B82F6; /* Electric Blue Accent */
+  --accent-hover: #2563EB;
+  
+  /* Text */
+  --text-primary: #F9FAFB; /* Soft white text */
+  --text-secondary: #9CA3AF; /* Muted slate for readability */
+  
+  /* Borders & Shadows */
+  --border: rgba(59, 130, 246, 0.15); /* Subtle blue tinted border */
+  --border-hover: rgba(59, 130, 246, 0.3);
+  --shadow-glow: 0 4px 20px rgba(59, 130, 246, 0.15); /* Electric blue glow for hover states */
+
+  /* Typography */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
 }
 
@@ -79,7 +89,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(10, 14, 26, 0.85);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border);
@@ -97,7 +107,7 @@ nav {
   font-weight: 800;
   color: var(--text-primary);
   letter-spacing: -0.05em;
-  transition: color 0.2s ease;
+  transition: color 0.3s ease;
 }
 
 .logo:hover {
@@ -113,7 +123,7 @@ nav {
   color: var(--text-secondary);
   font-size: 0.9rem;
   font-weight: 500;
-  transition: color 0.2s ease;
+  transition: color 0.3s ease;
 }
 
 .nav-link:hover, .nav-link.active {
@@ -122,8 +132,11 @@ nav {
 
 .mobile-toggle {
   display: none;
+  background: transparent;
+  border: none;
   color: var(--text-primary);
   font-size: 1.5rem;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -135,7 +148,9 @@ nav {
     top: 80px;
     left: 0;
     right: 0;
-    background: var(--bg-base);
+    background: rgba(10, 14, 26, 0.95);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     padding: 32px;
     border-bottom: 1px solid var(--border);
     gap: 24px;
@@ -149,34 +164,37 @@ nav {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 16px 32px;
+  padding: 14px 28px;
   font-size: 0.95rem;
   font-weight: 600;
-  border-radius: 4px; /* Sharp edges */
-  transition: all 0.2s ease;
+  border-radius: 12px; /* Elegant rounded edges */
+  transition: all 0.3s ease;
 }
 
 .btn-primary {
   background: var(--accent);
   color: #FFFFFF;
-  box-shadow: 4px 4px 0 var(--border); /* Brutalist shadow */
+  box-shadow: 0 4px 14px rgba(59, 130, 246, 0.25);
 }
 
 .btn-primary:hover {
   background: var(--accent-hover);
-  transform: translate(2px, 2px);
-  box-shadow: 2px 2px 0 var(--border);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-glow);
 }
 
 .btn-outline {
   background: var(--surface);
   color: var(--text-primary);
   border: 1px solid var(--border);
+  backdrop-filter: blur(12px);
 }
 
 .btn-outline:hover {
   background: var(--surface-hover);
-  border-color: var(--border-hover);
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-glow);
 }
 
 /* Hero */
