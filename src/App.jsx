@@ -187,41 +187,74 @@ const Portfolio = () => {
             
             <div className="project-card">
               <div className="project-content">
-                <h3>IDrive Salesman App</h3>
-                <p>A massive field sales and distribution platform operating seamlessly across India, UAE, and KSA markets. Built with an offline-first architecture.</p>
+                <h3>Hail Driver</h3>
+                <p>A comprehensive Flutter application tailored for drivers, featuring real-time location tracking and efficient route management.</p>
                 <div className="skill-list">
                   <span className="skill-tag">Flutter</span>
-                  <span className="skill-tag">REST API</span>
-                  <span className="skill-tag">Offline-first</span>
+                  <span className="skill-tag">Google Maps</span>
+                  <span className="skill-tag">WebSockets</span>
                 </div>
               </div>
-
             </div>
 
             <div className="project-card">
               <div className="project-content">
-                <h3>ONEIC Pay</h3>
-                <p>Comprehensive utility bill payment and digital wallet system featuring P2P transfers and secure payment gateways.</p>
+                <h3>Sugoimed</h3>
+                <p>A modern healthcare platform delivering seamless medical consultations and secure patient data management.</p>
+                <div className="skill-list">
+                  <span className="skill-tag">Flutter</span>
+                  <span className="skill-tag">Healthcare</span>
+                  <span className="skill-tag">REST API</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="project-card">
+              <div className="project-content">
+                <h3>Fitreat Couple</h3>
+                <p>A collaborative fitness tracking application designed for couples to share workouts, meals, and health goals.</p>
                 <div className="skill-list">
                   <span className="skill-tag">Flutter</span>
                   <span className="skill-tag">Firebase</span>
-                  <span className="skill-tag">Fintech</span>
+                  <span className="skill-tag">HealthKit</span>
                 </div>
               </div>
-
             </div>
 
             <div className="project-card">
               <div className="project-content">
-                <h3>ACIX Locker Management</h3>
-                <p>A smart locker ecosystem tightly integrated with BLE and secure LAN locking hardware mechanisms.</p>
+                <h3>Fitreat Nutritionist</h3>
+                <p>The companion app for nutritionists to manage client diets, track progress, and provide real-time chat support.</p>
                 <div className="skill-list">
                   <span className="skill-tag">Flutter</span>
-                  <span className="skill-tag">BLE Integration</span>
-                  <span className="skill-tag">Hardware Control</span>
+                  <span className="skill-tag">Chat</span>
+                  <span className="skill-tag">Analytics</span>
                 </div>
               </div>
+            </div>
 
+            <div className="project-card">
+              <div className="project-content">
+                <h3>Yuze India</h3>
+                <p>A powerful fintech application enabling secure digital payments, money transfers, and financial analytics.</p>
+                <div className="skill-list">
+                  <span className="skill-tag">Flutter</span>
+                  <span className="skill-tag">Fintech</span>
+                  <span className="skill-tag">Payment Gateway</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="project-card">
+              <div className="project-content">
+                <h3>PradX</h3>
+                <p>An innovative mobile platform designed to streamline digital workflows and boost productivity.</p>
+                <div className="skill-list">
+                  <span className="skill-tag">Flutter</span>
+                  <span className="skill-tag">UI/UX</span>
+                  <span className="skill-tag">Offline-first</span>
+                </div>
+              </div>
             </div>
 
           </div>
