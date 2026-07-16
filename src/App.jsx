@@ -100,9 +100,7 @@ const Portfolio = () => {
               </button>
             </div>
           </div>
-          <div className="hero-visual" aria-hidden="true">
-            <span style={{ fontFamily: 'var(--font-mono)', color: 'var(--text-secondary)' }}>&lt;clean_code /&gt;</span>
-          </div>
+
         </section>
 
         <section id="capabilities" className="container section-animate" ref={setSectionRef}>
@@ -197,7 +195,7 @@ const Portfolio = () => {
                   <span className="skill-tag">Offline-first</span>
                 </div>
               </div>
-              <div className="project-image" aria-hidden="true">Logistics UI</div>
+
             </div>
 
             <div className="project-card">
@@ -210,7 +208,7 @@ const Portfolio = () => {
                   <span className="skill-tag">Fintech</span>
                 </div>
               </div>
-              <div className="project-image" aria-hidden="true">Wallet UI</div>
+
             </div>
 
             <div className="project-card">
@@ -223,7 +221,7 @@ const Portfolio = () => {
                   <span className="skill-tag">Hardware Control</span>
                 </div>
               </div>
-              <div className="project-image" aria-hidden="true">Hardware UI</div>
+
             </div>
 
           </div>

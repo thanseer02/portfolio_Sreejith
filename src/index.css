@@ -200,15 +200,16 @@ nav {
 /* Hero */
 .hero {
   min-height: 90vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   gap: 64px;
 }
 
 @media (max-width: 992px) {
   .hero {
-    grid-template-columns: 1fr;
+    align-items: center;
     text-align: center;
     gap: 32px;
   }
@@ -444,16 +445,24 @@ nav {
 }
 
 .project-card {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 48px;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 40px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--border-hover);
 }
 
 @media (max-width: 992px) {
   .project-card {
-    grid-template-columns: 1fr;
-    gap: 32px;
+    gap: 24px;
   }
 }
 
