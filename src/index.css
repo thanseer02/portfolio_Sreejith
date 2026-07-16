@@ -2,22 +2,22 @@
 
 :root {
   /* Core Backgrounds */
-  --bg-base: #0A0E1A; /* Deep Navy Background */
-  --surface: rgba(17, 24, 39, 0.7); /* Translucent navy for cards */
-  --surface-hover: rgba(31, 41, 55, 0.8);
+  --bg-base: #000000; /* Pure Black Background */
+  --surface: #0a0a0a; /* Slightly lighter black for cards */
+  --surface-hover: #141414;
 
   /* Accents */
-  --accent: #3B82F6; /* Electric Blue Accent */
-  --accent-hover: #2563EB;
+  --accent: #ffffff; /* White Accent */
+  --accent-hover: #e0e0e0;
   
   /* Text */
-  --text-primary: #F9FAFB; /* Soft white text */
-  --text-secondary: #9CA3AF; /* Muted slate for readability */
+  --text-primary: #ffffff; /* White text */
+  --text-secondary: #999999; /* Gray for readability */
   
   /* Borders & Shadows */
-  --border: rgba(59, 130, 246, 0.15); /* Subtle blue tinted border */
-  --border-hover: rgba(59, 130, 246, 0.3);
-  --shadow-glow: 0 4px 20px rgba(59, 130, 246, 0.15); /* Electric blue glow for hover states */
+  --border: #222222; /* Subtle gray border */
+  --border-hover: #444444;
+  --shadow-glow: 0 4px 20px rgba(255, 255, 255, 0.05); /* Very subtle white glow */
 
   /* Typography */
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
