@@ -6,7 +6,7 @@ import '../../../core/utils/responsive_layout.dart';
 import '../../../models/portfolio_data.dart';
 
 class AboutSection extends StatelessWidget {
-  const AboutSection({Key? key}) : super(key: key);
+  const AboutSection({super.key});
 
   @override
   Widget build(BuildContext context) {

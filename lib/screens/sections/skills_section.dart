@@ -7,7 +7,7 @@ import '../../../models/portfolio_data.dart';
 import '../../../widgets/glass_card.dart';
 
 class SkillsSection extends StatelessWidget {
-  const SkillsSection({Key? key}) : super(key: key);
+  const SkillsSection({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -38,8 +38,11 @@ class SkillsSection extends StatelessWidget {
 
   Widget _buildSkillsGrid(BuildContext context) {
     int crossAxisCount = 1;
-    if (ResponsiveLayout.isDesktop(context)) crossAxisCount = 3;
-    else if (ResponsiveLayout.isTablet(context)) crossAxisCount = 2;
+    if (ResponsiveLayout.isDesktop(context)) {
+      crossAxisCount = 3;
+    } else if (ResponsiveLayout.isTablet(context)) {
+      crossAxisCount = 2;
+    }
 
     return GridView.builder(
       shrinkWrap: true,

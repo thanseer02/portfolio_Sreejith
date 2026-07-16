@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import '../../core/constants/app_colors.dart';
-import '../../core/constants/app_styles.dart';
 
 class PrimaryButton extends StatefulWidget {
   final String text;
@@ -9,12 +7,12 @@ class PrimaryButton extends StatefulWidget {
   final IconData? icon;
 
   const PrimaryButton({
-    Key? key,
+    super.key,
     required this.text,
     required this.onPressed,
     this.outlined = false,
     this.icon,
-  }) : super(key: key);
+  });
 
   @override
   State<PrimaryButton> createState() => _PrimaryButtonState();
@@ -31,7 +29,11 @@ class _PrimaryButtonState extends State<PrimaryButton> {
       child: AnimatedContainer(
         duration: const Duration(milliseconds: 200),
         curve: Curves.easeInOut,
-        transform: Matrix4.identity()..scale(_isHovered ? 1.05 : 1.0),
+        transform: Matrix4.diagonal3Values(
+          _isHovered ? 1.05 : 1.0, 
+          _isHovered ? 1.05 : 1.0, 
+          1.0
+        ),
         child: widget.outlined
             ? OutlinedButton.icon(
                 onPressed: widget.onPressed,

@@ -7,7 +7,7 @@ import '../../../models/portfolio_data.dart';
 import '../../../widgets/glass_card.dart';
 
 class ProjectsSection extends StatelessWidget {
-  const ProjectsSection({Key? key}) : super(key: key);
+  const ProjectsSection({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -37,8 +37,11 @@ class ProjectsSection extends StatelessWidget {
 
   Widget _buildProjectsGrid(BuildContext context) {
     int crossAxisCount = 1;
-    if (ResponsiveLayout.isDesktop(context)) crossAxisCount = 3;
-    else if (ResponsiveLayout.isTablet(context)) crossAxisCount = 2;
+    if (ResponsiveLayout.isDesktop(context)) {
+      crossAxisCount = 3;
+    } else if (ResponsiveLayout.isTablet(context)) {
+      crossAxisCount = 2;
+    }
 
     return GridView.builder(
       shrinkWrap: true,
@@ -64,7 +67,7 @@ class _ProjectCard extends StatefulWidget {
   final Project project;
   final int index;
 
-  const _ProjectCard({Key? key, required this.project, required this.index}) : super(key: key);
+  const _ProjectCard({required this.project, required this.index});
 
   @override
   State<_ProjectCard> createState() => _ProjectCardState();
@@ -80,7 +83,7 @@ class _ProjectCardState extends State<_ProjectCard> {
       onExit: (_) => setState(() => _isHovered = false),
       child: AnimatedContainer(
         duration: const Duration(milliseconds: 300),
-        transform: Matrix4.identity()..translate(0.0, _isHovered ? -8.0 : 0.0),
+        transform: Matrix4.identity()..setTranslationRaw(0.0, _isHovered ? -8.0 : 0.0, 0.0),
         child: GlassCard(
           padding: const EdgeInsets.all(0),
           child: Column(
@@ -95,7 +98,7 @@ class _ProjectCardState extends State<_ProjectCard> {
                     child: Icon(
                       Icons.dashboard_rounded,
                       size: 64,
-                      color: AppColors.secondary.withOpacity(0.5),
+                      color: AppColors.secondary.withValues(alpha: 0.5),
                     ),
                   ),
                 ),
@@ -138,9 +141,9 @@ class _ProjectCardState extends State<_ProjectCard> {
                           return Container(
                             padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                             decoration: BoxDecoration(
-                              color: AppColors.primary.withOpacity(0.05),
+                              color: AppColors.primary.withValues(alpha: 0.05),
                               borderRadius: BorderRadius.circular(20),
-                              border: Border.all(color: AppColors.primary.withOpacity(0.1)),
+                              border: Border.all(color: AppColors.primary.withValues(alpha: 0.1)),
                             ),
                             child: Text(
                               tech,

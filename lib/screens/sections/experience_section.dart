@@ -7,7 +7,7 @@ import '../../../models/portfolio_data.dart';
 import '../../../widgets/glass_card.dart';
 
 class ExperienceSection extends StatelessWidget {
-  const ExperienceSection({Key? key}) : super(key: key);
+  const ExperienceSection({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -59,7 +59,7 @@ class ExperienceSection extends StatelessWidget {
                 Container(
                   width: 2,
                   height: 200, // Approximate height, or use IntrinsicHeight
-                  color: AppColors.secondary.withOpacity(0.2),
+                  color: AppColors.secondary.withValues(alpha: 0.2),
                 ),
               ],
             ).animate().fadeIn(delay: (200 + index * 100).ms),
@@ -108,7 +108,7 @@ class ExperienceSection extends StatelessWidget {
                             child: Icon(
                               Icons.arrow_right_alt_rounded,
                               size: 16,
-                              color: AppColors.accent.withOpacity(0.7),
+                              color: AppColors.accent.withValues(alpha: 0.7),
                             ),
                           ),
                           Expanded(
@@ -120,7 +120,7 @@ class ExperienceSection extends StatelessWidget {
                         ],
                       ),
                     );
-                  }).toList(),
+                  }),
                 ],
               ),
             ).animate().fadeIn(delay: (300 + index * 100).ms).slideX(begin: 0.1, end: 0),

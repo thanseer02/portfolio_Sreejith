@@ -7,7 +7,9 @@ import '../../../models/portfolio_data.dart';
 import '../../../widgets/primary_button.dart';
 
 class HeroSection extends StatelessWidget {
-  const HeroSection({Key? key}) : super(key: key);
+  final VoidCallback? onContactPressed;
+
+  const HeroSection({super.key, this.onContactPressed}) ;
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +29,7 @@ class HeroSection extends StatelessWidget {
               decoration: BoxDecoration(
                 color: AppColors.surface,
                 borderRadius: BorderRadius.circular(30),
-                border: Border.all(color: AppColors.secondary.withOpacity(0.2)),
+                border: Border.all(color: AppColors.secondary.withValues(alpha: 0.2)),
               ),
               child: Text(
                 'Available for new opportunities',
@@ -95,9 +97,7 @@ class HeroSection extends StatelessWidget {
                   text: 'Contact Me',
                   icon: Icons.mail_outline_rounded,
                   outlined: true,
-                  onPressed: () {
-                    // Logic to scroll to contact
-                  },
+                  onPressed: onContactPressed ?? () {},
                 ),
               ],
             )
