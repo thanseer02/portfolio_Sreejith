@@ -139,6 +139,17 @@ nav {
   position: relative;
   z-index: 1;
   max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero-name {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  margin: 0 0 16px 0;
+  color: var(--text-primary);
 }
 .hero-badge {
   display: inline-flex;
@@ -649,6 +660,7 @@ class App extends StatelessWidget {
           <div className="floating-bg">{codeSnippet}</div>
           <div className="container hero-content">
             <div className="hero-badge glass-panel">Available for new opportunities</div>
+            <h2 className="hero-name">Sreejith M</h2>
             <h1>Senior <span>Flutter</span> Developer</h1>
             <p>
               Building scalable Android, iOS & Web apps with 4+ years of experience.
